@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+alert("Jogo do Adivinha o Número")
+
+mostra("<h1> Jogo do Adivinha o Número. </h1>")
+
+var nome = prompt("Qual seu nome?")
+
+var numeroPensado = Math.round(Math.random() * 5) ;
+
+var tentativas = 1;
+
+while(tentativas <= 3){
+    var chute = parseInt(prompt("Digite seu chute!"));
+
+    if(chute == numeroPensado){
+        mostra(nome + "você acertou! O número pensado foi " + numeroPensado + " :) ");
+        break;
+    } else {
+        mostra(nome + " você errou, o número não é " + chute + " o número pensado foi " + numeroPensado + " :(");
+    }
+
+    tentativas++;
+
+}
+
+
+</script>
