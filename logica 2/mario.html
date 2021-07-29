@@ -1,0 +1,81 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.font ='40px Georgia';
+    pincel.fillText("Mario!", 315, 40,);
+    
+    // cabeça
+	pincel.fillStyle = 'NavajoWhite';
+	pincel.fillRect(200, 50, 350, 400);
+    
+    // chapel
+	pincel.fillStyle = 'red';
+	pincel.fillRect(200, 50, 350, 75);
+
+	pincel.fillStyle = 'darkred';
+	pincel.fillRect(200, 125, 350, 15);
+    
+    // simbolo do chapel
+    pincel.fillStyle = 'white';
+	pincel.fillRect(315, 60, 119, 65);
+
+	pincel.fillStyle = 'red';
+    pincel.beginPath();
+    pincel.moveTo(355, 65);
+    pincel.lineTo(325, 120);
+    pincel.lineTo(385, 120);
+    pincel.fill();
+
+    pincel.fillStyle = 'red';
+    pincel.beginPath();
+    pincel.moveTo(396, 65);
+    pincel.lineTo(370, 120);
+    pincel.lineTo(424, 120);
+    pincel.fill();
+
+    pincel.fillStyle = 'white';
+    pincel.beginPath();
+    pincel.moveTo(355, 83);
+    pincel.lineTo(334, 120);
+    pincel.lineTo(377, 120);
+    pincel.fill();
+
+    pincel.fillStyle = 'white';
+    pincel.beginPath();
+    pincel.moveTo(396, 83);
+    pincel.lineTo(378, 120);
+    pincel.lineTo(415, 120);
+    pincel.fill();
+
+    // olhos
+	pincel.fillStyle = 'White';
+	pincel.fillRect(250, 150, 90, 99);
+
+	pincel.fillStyle = 'White';
+	pincel.fillRect(410, 150, 90, 99);
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(300, 190, 40, 60);
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(410, 190, 40, 60);
+    
+    // nariz
+	pincel.fillStyle = 'Tan';
+	pincel.fillRect(325, 250, 99, 60);
+    
+    // bigode
+	pincel.fillStyle = 'black';
+	pincel.fillRect(300, 300, 150, 45);
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(227, 255, 99, 45);
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(423, 255, 99, 45);
+
+</script>

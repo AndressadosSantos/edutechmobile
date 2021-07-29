@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h1>Bandeira do Brasil!</h1>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'green';
+	pincel.fillRect(0, 0, 600, 400);
+    
+    //primeiro triangulo
+	pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 50); //encima
+    pincel.lineTo(50, 200); //esquerdo
+    pincel.lineTo(550, 200); //direito
+    pincel.fill();
+
+    //segundo triangulo
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 350); //encima
+    pincel.lineTo(50, 200); //esquerdo
+    pincel.lineTo(550, 200); //direito
+    pincel.fill();
+
+    //circulo
+    pincel.fillStyle = 'darkblue';
+    pincel.beginPath();
+    pincel.arc(300, 200, 100, 0, 2*3.14);
+    pincel.fill();
+</script>
